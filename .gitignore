@@ -17,3 +17,4 @@ frontend/*.tsbuildinfo
 .ipynb_checkpoints/
 outputs/*
 !outputs/README.md
+.vite/
