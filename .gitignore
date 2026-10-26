@@ -5,6 +5,15 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+node_modules/
+frontend/dist/
+campus_twin.db
+*.sqlite3
+*.sqlite
+data/raw/
+data/external/
+data/processed/
+frontend/*.tsbuildinfo
 .ipynb_checkpoints/
 outputs/*
 !outputs/README.md

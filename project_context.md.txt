@@ -1,0 +1,89 @@
+# Project Context — AI-Powered Digital Twin for Sustainable Smart Campuses
+
+## 1. Project Overview
+
+**Project title:** AI-Powered Digital Twin Platform for Sustainable Smart Campuses  
+**Domain:** Smart Cities, AI, Digital Twins, Predictive Analytics  
+**Sustainable Development Goal:** SDG 11 — Sustainable Cities and Communities
+
+We are building a B.Tech major project that uses AI and a digital twin to help campus administrators understand building energy usage, predict demand, detect abnormal consumption, and evaluate sustainability interventions.
+
+## 2. Current Repository Under Review
+
+Repository: https://github.com/vicena-labs/building-energy-hvac-digital-twin
+
+I am using Codex to scan this repository and determine which components can be reused, adapted, or used as architectural references for our project.
+
+## 3. Planned Technology Stack
+
+- Machine learning: XGBoost, LSTM, Isolation Forest
+- Backend: Python, FastAPI
+- Frontend: React.js
+- 3D visualization: Three.js / React Three Fiber
+- Database: PostgreSQL
+- Charts: Plotly
+- GenAI assistant: Amazon Bedrock and LangChain
+- Deployment: AWS, Docker, Git/GitHub
+- HVAC optimization: optional, depending on simulation feasibility
+
+## 4. Data Constraints
+
+We do not currently have access to actual campus electricity bills or detailed campus sensor records.
+
+We may use public building-energy datasets, campus metadata, historical weather data, and clearly labelled synthetic sensor data.
+
+Potential public dataset: ASHRAE Great Energy Predictor III.
+
+We must distinguish measured data, model predictions, and simulated scenarios. We must not present simulated energy savings as verified real-world savings.
+
+## 5. Intended Research Contribution
+
+We want the project to go beyond a standard dashboard or a basic combination of AI models.
+
+Our proposed innovation is a **Trust-Aware, Data-Scarcity-Aware Campus Digital Twin**, featuring:
+
+1. Cross-building or transfer-learning approaches for buildings with limited historical data.
+2. Prediction reliability checks that estimate uncertainty and flag unreliable predictions.
+3. Data-acquisition guidance that identifies which additional measurements would most improve prediction quality.
+4. Budget-constrained sustainability planning that ranks interventions using estimated savings, cost, comfort constraints, and uncertainty.
+5. An interactive campus twin that visualizes building-level forecasts, anomalies, and what-if scenarios.
+
+A multi-agent architecture may be used if it adds measurable value. Potential agents include an Energy Forecasting Agent, Data Quality and Trust Agent, Sustainability Planning Agent, and Explanation Agent.
+
+## 6. What I Need Codex to Investigate
+
+First, inspect the repository without changing any files.
+
+1. Explain its architecture, folder structure, dependencies, entry points, and execution workflow.
+2. Identify which features are genuinely implemented versus described as planned, mocked, or simulated.
+3. Check the data sources, sample datasets, synthetic-data generators, model-training code, evaluation procedures, and reproducibility.
+4. Identify reusable components for energy forecasting, thermal simulation, uncertainty estimation, optimization, APIs, and visualization.
+5. Check its license, setup instructions, external services, hardware requirements, and compatibility with our planned stack.
+6. Identify missing features and any significant technical risks.
+7. Assess whether we should fork it, reuse selected modules, or build our application separately.
+8. Propose a minimal integration plan with specific files and components to reuse, adapt, replace, or build.
+9. Suggest how to evaluate our proposed research contribution using held-out buildings, appropriate prediction metrics, uncertainty checks, and scenario comparisons.
+10. Do not invent test results. If you cannot run something, explain why and distinguish inspected code from verified runtime behavior.
+
+## 7. Constraints
+
+- Begin with read-only repository analysis.
+- Do not modify, delete, or overwrite files.
+- Do not install packages or run expensive workloads without asking.
+- Do not assume the repository's claims are verified merely because they appear in its README.
+- Prefer a small, reproducible working prototype over unnecessary architectural complexity.
+- Do not add reinforcement learning or multi-agent orchestration unless there is a clear use case and a feasible evaluation method.
+
+## Expected Output
+
+Produce a structured repository audit with:
+- Architecture summary
+- Feature implementation status
+- File-by-file reuse recommendations
+- Dataset and model assessment
+- Compatibility and license risks
+- Gaps relative to our project
+- Recommended implementation plan
+- Questions that need human decisions before coding
+
+Start by scanning the repository and reporting findings. Do not implement anything yet.

@@ -147,6 +147,10 @@ Clone https://github.com/vicena-labs/building-energy-hvac-digital-twin.git and t
 
 Open [Vicena.ai](https://vicena.ai), paste `https://github.com/vicena-labs/building-energy-hvac-digital-twin.git`, and ask Vicena to clone it, read `AGENTS.md` and the repository skill, run tests, and summarize the scientific validation boundary before adapting the model.
 
+## MLRIT sustainable campus twin prototype
+
+The separate [`campus_twin/`](campus_twin/) application package adds a FastAPI service, PostgreSQL-compatible storage, a React Three Fiber campus view, synthetic demo readings, provider-based weather and carbon connectors, baseline forecasts, NSGA-II planning, a Gymnasium/RLlib environment, and a read-only assistant. Its seeded data and campus massing are illustrative. See [the campus twin guide](docs/campus-twin.md) for setup, provenance, API endpoints, dataset requirements, and scientific boundaries.
+
 ## License
 
 MIT. User-supplied and third-party datasets retain their own licenses and must not be redistributed without permission.
